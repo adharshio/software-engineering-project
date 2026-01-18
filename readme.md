@@ -68,7 +68,7 @@ Chosen for its flexibility, continuous feedback, and ability to handle evolving 
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ Technology Stack(Not Decided)
 
 | Layer        | Technology |
 |--------------|------------|
@@ -79,7 +79,7 @@ Chosen for its flexibility, continuous feedback, and ability to handle evolving 
 
 ---
 
-## 📊 System Features
+## 📊 System Features(Not confirmed)
 
 - Role-based access (Citizen / Official / Admin)
 - Complaint tracking with transparency
