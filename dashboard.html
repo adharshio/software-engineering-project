@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Complaint Portal</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="sidebar">
+        <div class="brand">
+            <span class="material-icons">security</span>
+            <h2>E-Complaint</h2>
+        </div>
+        <div class="user-profile">
+            <div class="avatar">U</div>
+            <p id="userEmail">Welcome Back...</p>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#"><span class="material-icons">dashboard</span> Dashboard</a></li>
+            <li><a href="#"><span class="material-icons">add_circle</span> New Complaint</a></li>
+            <li><a href="#"><span class="material-icons">history</span> History</a></li>
+            <li><a href="#"><span class="material-icons">settings</span> Settings</a></li>
+        </ul>
+        <div class="logout-section">
+            <button id="logoutBtn"><span class="material-icons">logout</span> Logout</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <h1>Dashboard Overview</h1>
+            <button class="file-btn">+ File Complaint</button>
+        </header>
+
+        <div class="stats-grid">
+            <div class="card stat-card blue">
+                <h3>Total</h3>
+                <span class="number">12</span>
+                <span class="material-icons bg-icon">folder</span>
+            </div>
+            <div class="card stat-card orange">
+                <h3>Pending</h3>
+                <span class="number">4</span>
+                <span class="material-icons bg-icon">pending_actions</span>
+            </div>
+            <div class="card stat-card green">
+                <h3>Resolved</h3>
+                <span class="number">8</span>
+                <span class="material-icons bg-icon">check_circle</span>
+            </div>
+        </div>
+
+        <div class="recent-section">
+            <h2>Recent Complaints</h2>
+            <div class="card table-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1024</td>
+                            <td>Trash box full</td>
+                            <td>Jan 15, 2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1023</td>
+                            <td>Street Lamp not working</td>
+                            <td>Jan 12, 2026</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>
